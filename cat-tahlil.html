@@ -1,47 +1,34 @@
 <!doctype html><html lang="uz"><head><meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Tahlil — California Uzbek</title>
-<meta name="description" content="Tahlil">
+<title>Tahlil — California Uzbek</title><meta name="description" content="Tahlil">
 <meta property="og:title" content="Tahlil — California Uzbek"><meta property="og:type" content="website">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css"></head><body>
-<header class="site"><a class="brand" href="index.html">CALIFORNIA <b>UZBEK</b></a><nav class="cats"><a href="cat-markaziy-osiyo.html">Markaziy Osiyo</a><a href="cat-dunyo.html">Dunyo</a><a href="cat-iqtisod.html">Iqtisod</a><a href="cat-musulmon-dunyosi.html">Musulmon dunyosi</a><a href="cat-tahlil.html">Tahlil</a></nav><nav class="soc"><a href="https://t.me/california_uzbek">Telegram</a><a href="https://instagram.com/california_uzbek">Instagram</a></nav></header><div class="subbar">Mustaqil tahlil · Markaziy Osiyo va dunyo geosiyosati</div><div class="layout"><main class="wrap home">
-<h1 class="cattitle">Tahlil</h1><div class="grid"><p class='empty'>Bu bo‘limda hozircha maqola yo‘q.</p></div></main>
+<header class="site"><a class="brand" href="index.html">CALIFORNIA <b>UZBEK</b></a><nav class="cats"><a href="cat-markaziy-osiyo.html">Markaziy Osiyo</a><a href="cat-dunyo.html">Dunyo</a><a href="cat-iqtisod.html">Iqtisod</a><a href="cat-musulmon-dunyosi.html">Musulmon dunyosi</a><a href="cat-tahlil.html">Tahlil</a></nav><div class="langsw"><a href="cat-tahlil.html">O‘Z</a><a href="cat-tahlil.en.html">EN</a><a href="cat-tahlil.ru.html">RU</a></div></header><div class="subbar">Mustaqil tahlil · Markaziy Osiyo va dunyo geosiyosati</div><div class="layout"><main class="wrap home"><h1 class="cattitle">Tahlil</h1>
+<div class="grid"><p class='empty'>—</p></div></main>
 <aside class="side">
-  <div class="w donate">
-    <h4>Qo‘llab-quvvatlash</h4>
-    <p>Mustaqil jurnalistikani qo‘llab-quvvatlang.</p>
-    <a class="dbtn" href="https://taps.uz/california_uzbek" target="_blank" rel="noopener">❤ Homiylik qilish</a>
-  </div>
-  <div class="w"><h4>Valyuta kurslari</h4><div id="fx" class="rows">Yuklanmoqda…</div>
-    <div class="src">Manba: exchangerate-api</div></div>
-  <div class="w"><h4>Namoz vaqtlari · Toshkent</h4><div id="pray" class="rows">Yuklanmoqda…</div>
-    <div class="src">Manba: Aladhan</div></div>
-  <div class="w"><h4>Ob-havo · Toshkent</h4><div id="wx" class="rows">Yuklanmoqda…</div>
-    <div class="src">Manba: Open-Meteo</div></div>
+  <div class="w donate"><h4>Qo‘llab-quvvatlash</h4><p>Mustaqil jurnalistikani qo‘llab-quvvatlang.</p>
+    <a class="dbtn" href="https://taps.uz/california_uzbek" target="_blank" rel="noopener">❤ Homiylik qilish</a></div>
+  <div class="w"><h4>Valyuta kurslari</h4><div id="fx" class="rows">…</div></div>
+  <div class="w"><h4>Namoz vaqtlari · Toshkent</h4><div id="pray" class="rows">…</div></div>
+  <div class="w"><h4>Ob-havo · Toshkent</h4><div id="wx" class="rows">…</div></div>
   <div class="w follow"><h4>Kuzatib boring</h4>
-    <a href="https://t.me/california_uzbek">Telegram → @california_uzbek</a>
+    <a href="https://t.me/+xmsfWtwiDFFjMTli">Telegram → @california_uzbek</a>
     <a href="https://instagram.com/california_uzbek">Instagram → @california_uzbek</a></div>
-</aside></div><footer><div class="wrap">
-<div class="fbrand">CALIFORNIA <b>UZBEK</b></div>
-<p>Har kuni eng muhim voqealar — faktlar va rasmiy manbalar asosida.</p>
-<p><a href="https://t.me/california_uzbek">Telegram</a> · <a href="https://instagram.com/california_uzbek">Instagram</a> · <a href="https://taps.uz/california_uzbek">Qo‘llab-quvvatlash</a></p>
-<p class="fine">Faktlar tekshirilgan; rasmlar ochiq litsenziya (CC/PD). © 2026 California Uzbek</p>
-</div></footer>
+</aside></div><footer><div class="wrap"><div class="fbrand">CALIFORNIA <b>UZBEK</b></div>
+<p>Har kuni eng muhim voqealar — faktlar va rasmiy manbalar asosida.</p><p><a href="https://t.me/+xmsfWtwiDFFjMTli">Telegram</a> · <a href="https://instagram.com/california_uzbek">Instagram</a> · <a href="https://taps.uz/california_uzbek">Qo‘llab-quvvatlash</a></p>
+<p class="fine">© 2026 California Uzbek</p></div></footer>
 <script>
 const $=(id)=>document.getElementById(id);
-(async()=>{try{
- const r=await fetch('https://open.er-api.com/v6/latest/USD');const d=await r.json();const u=d.rates.UZS;
- const rows=[['1 USD',u],['1 EUR',u/d.rates.EUR],['1 RUB',u/d.rates.RUB]];
- $('fx').innerHTML=rows.map(([k,v])=>`<div class='row'><span>${k}</span><b>${v.toLocaleString('en-US',{maximumFractionDigits:0})} so'm</b></div>`).join('');
+(async()=>{try{const r=await fetch('https://open.er-api.com/v6/latest/USD');const d=await r.json();const u=d.rates.UZS;
+ const rows=[['USD',u],['EUR',u/d.rates.EUR],['RUB',u/d.rates.RUB]];
+ $('fx').innerHTML=rows.map(([k,v])=>`<div class='row'><span>1 ${k}</span><b>${v.toLocaleString('en-US',{maximumFractionDigits:0})} so'm</b></div>`).join('');
 }catch(e){$('fx').textContent='—';}})();
-(async()=>{try{
- const r=await fetch('https://api.aladhan.com/v1/timingsByCity?city=Tashkent&country=Uzbekistan&method=2');const d=(await r.json()).data.timings;
- const m={Fajr:'Bomdod',Dhuhr:'Peshin',Asr:'Asr',Maghrib:'Shom',Isha:'Xufton'};
- $('pray').innerHTML=Object.entries(m).map(([k,v])=>`<div class='row'><span>${v}</span><b>${d[k]}</b></div>`).join('');
+(async()=>{try{const r=await fetch('https://api.aladhan.com/v1/timingsByCity?city=Tashkent&country=Uzbekistan&method=2');const d=(await r.json()).data.timings;
+ const m=[['Fajr','Bomdod'],['Dhuhr','Peshin'],['Asr','Asr'],['Maghrib','Shom'],['Isha','Xufton']];
+ $('pray').innerHTML=m.map(([k,v])=>`<div class='row'><span>${v}</span><b>${d[k]}</b></div>`).join('');
 }catch(e){$('pray').textContent='—';}})();
-(async()=>{try{
- const r=await fetch('https://api.open-meteo.com/v1/forecast?latitude=41.31&longitude=69.24&current=temperature_2m');const c=(await r.json()).current;
+(async()=>{try{const r=await fetch('https://api.open-meteo.com/v1/forecast?latitude=41.31&longitude=69.24&current=temperature_2m');const c=(await r.json()).current;
  $('wx').innerHTML=`<div class='row'><span>Hozir</span><b>${Math.round(c.temperature_2m)}°C</b></div>`;
 }catch(e){$('wx').textContent='—';}})();
 </script></body></html>
