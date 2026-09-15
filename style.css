@@ -60,5 +60,14 @@ footer{background:var(--blk);color:#cfc9be;margin-top:50px;padding:38px 22px}
 .fbrand{font-family:'Anton';font-size:24px;color:#fff;text-transform:uppercase;margin-bottom:8px}.fbrand b{color:var(--red)}
 footer a{color:#fff;font-weight:600}footer p{margin-bottom:6px;font-size:14px}.fine{color:#7d766a;font-size:12px;margin-top:10px}
 @media(max-width:900px){.layout{grid-template-columns:1fr}.side{position:static;flex-direction:row;flex-wrap:wrap}.side .w{flex:1;min-width:210px}}
+@media(max-width:760px){
+  header.site{gap:10px 14px;padding:12px 16px}
+  .brand{font-size:23px}
+  .langsw{margin-left:auto;order:2}
+  .cats{order:3;flex:0 0 100%;flex-wrap:nowrap;overflow-x:auto;gap:18px;padding-bottom:2px;-webkit-overflow-scrolling:touch;scrollbar-width:none}
+  .cats::-webkit-scrollbar{display:none}
+  .cats a{white-space:nowrap;font-size:13px}
+  .subbar{font-size:12px;padding:6px 16px}
+}
 @media(max-width:640px){.lead{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.post h1{font-size:36px}.lead h2{font-size:30px}.side{flex-direction:column}}
 @media(prefers-color-scheme:dark){:root{--bg:#141210;--ink:#f0ece3;--mut:#a49c8d;--line:#2c2822;--cream:#1c1915;--card:#1c1915}.chip{background:#2c2822;color:#a49c8d}}
