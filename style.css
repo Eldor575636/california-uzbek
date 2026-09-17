@@ -12,6 +12,13 @@ header.site{border-bottom:3px solid var(--blk);background:var(--cream);padding:1
 .langsw a,.langsw span{font-weight:800;font-size:12px;padding:4px 8px;border-radius:6px}
 .langsw a{color:var(--red);border:1px solid var(--red)}.langsw a:hover{background:var(--red);color:#fff}
 .langsw .off{color:#b7b0a2;border:1px solid var(--line)}
+.ticker{display:flex;align-items:center;gap:16px;flex-wrap:wrap;background:var(--blk);color:#e8e2d6;font-size:12.5px;font-weight:600;padding:6px 22px;border-bottom:1px solid #24211c}
+.ticker .tk-k{color:#9a9384;font-weight:700}
+.ticker b{color:#fff;font-weight:800}
+.ticker .tk-fx b{color:var(--red)}
+.ticker .tk-date{color:#c9c2b4;text-transform:capitalize}
+.ticker .tk-wx{margin-left:auto}
+@media(max-width:640px){.ticker{font-size:11.5px;gap:11px;padding:5px 16px}.ticker .tk-date{display:none}}
 .subbar{background:var(--blk);color:#cfc9be;font-size:13px;font-weight:600;padding:6px 22px;text-align:center}
 .layout{max-width:1180px;margin:0 auto;padding:30px 22px 0;display:grid;grid-template-columns:1fr 320px;gap:38px;align-items:start}
 .layout .wrap{max-width:none;margin:0;padding:0}
