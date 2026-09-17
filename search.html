@@ -1,0 +1,52 @@
+<!doctype html><html lang="uz"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Qidiruv — California Uzbek</title><meta name="description" content="Maqolalarni sarlavha, mavzu yoki kalit so‘z bo‘yicha qidiring.">
+<meta property="og:title" content="Qidiruv — California Uzbek"><meta property="og:type" content="website">
+<link rel="canonical" href="https://eldor575636.github.io/california-uzbek/search.html"><link rel="alternate" hreflang="uz" href="https://eldor575636.github.io/california-uzbek/search.html"><link rel="alternate" hreflang="en" href="https://eldor575636.github.io/california-uzbek/search.en.html"><link rel="alternate" hreflang="ru" href="https://eldor575636.github.io/california-uzbek/search.ru.html"><link rel="alternate" hreflang="x-default" href="https://eldor575636.github.io/california-uzbek/search.html"><meta property="og:url" content="https://eldor575636.github.io/california-uzbek/search.html"><meta property="og:site_name" content="California Uzbek"><meta property="og:description" content="Maqolalarni sarlavha, mavzu yoki kalit so‘z bo‘yicha qidiring."><meta property="og:locale" content="uz_UZ"><meta property="og:locale:alternate" content="en_US"><meta property="og:locale:alternate" content="ru_RU"><meta property="og:image" content="https://eldor575636.github.io/california-uzbek/og-default.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Qidiruv — California Uzbek"><meta name="twitter:description" content="Maqolalarni sarlavha, mavzu yoki kalit so‘z bo‘yicha qidiring."><meta name="twitter:image" content="https://eldor575636.github.io/california-uzbek/og-default.png"><link rel="alternate" type="application/rss+xml" title="California Uzbek — So‘nggi yangiliklar" href="https://eldor575636.github.io/california-uzbek/feed.xml"><script type="application/ld+json">{"@context": "https://schema.org", "@type": "NewsMediaOrganization", "name": "California Uzbek", "url": "https://eldor575636.github.io/california-uzbek/", "logo": "https://eldor575636.github.io/california-uzbek/logo.png", "sameAs": ["https://t.me/+xmsfWtwiDFFjMTli", "https://instagram.com/california_uzbek", "https://www.facebook.com/california.uzbek", "https://www.youtube.com/@California_Uzbek", "https://www.tiktok.com/@california_uz"]}</script>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+
+<script>(function(){try{var k='cu-theme',s=localStorage.getItem(k);if(!s){var h=new Date().getHours();s=(h>=7&&h<19)?'light':'dark';}document.documentElement.setAttribute('data-theme',s);}catch(e){}})();</script>
+</head><body>
+<div class="ticker"><span class="tk-item tk-date" id="tkdate"></span><span class="tk-item tk-fx" id="tkfx"><span class="tk-k">USD</span> <b>…</b></span><span class="tk-item tk-wx" id="tkwx">Toshkent <b>…</b></span></div><header class="site"><a class="brand" href="index.html">CALIFORNIA <b>UZBEK</b></a><nav class="cats"><a href="cat-markaziy-osiyo.html">Markaziy Osiyo</a><a href="cat-dunyo.html">Dunyo</a><a href="cat-iqtisod.html">Iqtisod</a><a href="cat-musulmon-dunyosi.html">Musulmon dunyosi</a><a href="cat-tahlil.html">Tahlil</a></nav><a class="iconbtn" href="search.html" aria-label="Qidiruv" title="Qidiruv">🔍</a><div class="langsw"><a href="search.html">O‘Z</a><a href="search.en.html">EN</a><a href="search.ru.html">RU</a></div><button class="themebtn" onclick="__cuTheme()" aria-label="Kunduz / tun rejimi" title="Kunduz / tun">🌓</button></header><div class="subbar">Mustaqil tahlil · Markaziy Osiyo va dunyo geosiyosati</div><div class="layout" style="display:block"><main class="wrap home searchpage"><h1 class="cattitle">Qidiruv</h1><input id="q" class="searchbox" type="search" placeholder="Kalit so‘z bo‘yicha qidiring…" autofocus><p id="noq" class="empty">Maqolalarni sarlavha, mavzu yoki kalit so‘z bo‘yicha qidiring.</p><div id="results" class="grid"></div></main></div><script>
+(async function(){
+ var R=document.getElementById('results'),Q=document.getElementById('q'),N=document.getElementById('noq');
+ var idx=[];try{idx=await (await fetch('search.json')).json();}catch(e){}
+ var RD="daqiqa o\u2018qish",NONE="Hech narsa topilmadi.",PR="Maqolalarni sarlavha, mavzu yoki kalit so\u2018z bo\u2018yicha qidiring.";
+ function esc(s){return (s||'').replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c];});}
+ function card(a){return '<a class="card" href="'+esc(a.url)+'"><div class="thumb" style="background-image:url(&quot;img/'+esc(a.hero)+'&quot;)"></div><div class="c-body"><div class="c-tags">'+esc(a.cat)+' · '+a.read+' '+esc(RD)+'</div><h3>'+esc(a.title)+'</h3><p>'+esc(a.dek)+'</p><div class="c-date">'+esc(a.date)+'</div></div></a>';}
+ function run(){var v=(Q.value||'').trim().toLowerCase();
+  if(!v){R.innerHTML='';N.textContent=PR;N.style.display='';return;}
+  var toks=v.split(/\s+/);
+  var hits=idx.filter(function(a){var h=(a.title+' '+a.dek+' '+a.tags+' '+a.cat).toLowerCase();return toks.every(function(t){return h.indexOf(t)>=0;});}).slice(0,48);
+  if(!hits.length){R.innerHTML='';N.textContent=NONE;N.style.display='';return;}
+  N.style.display='none';R.innerHTML=hits.map(card).join('');}
+ Q.addEventListener('input',run);
+ var p=new URLSearchParams(location.search).get('q');if(p){Q.value=p;run();}
+})();
+</script><footer><div class="wrap"><div class="fbrand">CALIFORNIA <b>UZBEK</b></div>
+<p>Har kuni eng muhim voqealar — faktlar va rasmiy manbalar asosida.</p><p><a href="about.html">Biz haqimizda</a> · <a href="mailto:california.uzbek@gmail.com">Aloqa</a> · <a href="https://t.me/+xmsfWtwiDFFjMTli">Telegram</a> · <a href="https://instagram.com/california_uzbek">Instagram</a> · <a href="https://taps.uz/california_uzbek">Qo‘llab-quvvatlash</a></p>
+<p class="fine">© 2026 California Uzbek</p></div></footer>
+<script>function __cuTheme(){try{var d=document.documentElement,c=d.getAttribute('data-theme')||'light',n=(c==='dark')?'light':'dark';d.setAttribute('data-theme',n);localStorage.setItem('cu-theme',n);}catch(e){}}</script>
+
+<script>
+const $=(id)=>document.getElementById(id);
+try{if($('tkdate'))$('tkdate').textContent=new Date().toLocaleDateString('uz-UZ',{day:'numeric',month:'long',year:'numeric'});}catch(e){}
+(async()=>{try{const r=await fetch('https://open.er-api.com/v6/latest/USD');const d=await r.json();const u=d.rates.UZS;const f=(x)=>Math.round(x).toLocaleString('en-US');
+ if($('tkfx'))$('tkfx').innerHTML=`<span class='tk-k'>USD</span> <b>${f(u)}</b> · <span class='tk-k'>EUR</span> <b>${f(u/d.rates.EUR)}</b> · <span class='tk-k'>RUB</span> <b>${(u/d.rates.RUB).toFixed(1)}</b>`;
+}catch(e){}})();
+(async()=>{try{const r=await fetch('https://api.open-meteo.com/v1/forecast?latitude=41.31&longitude=69.24&current=temperature_2m');const c=(await r.json()).current;
+ if($('tkwx'))$('tkwx').innerHTML=`Toshkent <b>${Math.round(c.temperature_2m)}°C</b>`;
+}catch(e){}})();
+(async()=>{try{const r=await fetch('https://open.er-api.com/v6/latest/USD');const d=await r.json();const u=d.rates.UZS;
+ const rows=[['USD',u],['EUR',u/d.rates.EUR],['RUB',u/d.rates.RUB]];
+ $('fx').innerHTML=rows.map(([k,v])=>`<div class='row'><span>1 ${k}</span><b>${v.toLocaleString('en-US',{maximumFractionDigits:0})} so'm</b></div>`).join('');
+}catch(e){$('fx').textContent='—';}})();
+(async()=>{try{const r=await fetch('https://api.aladhan.com/v1/timingsByCity?city=Tashkent&country=Uzbekistan&method=2');const d=(await r.json()).data.timings;
+ const m=[['Fajr','Bomdod'],['Dhuhr','Peshin'],['Asr','Asr'],['Maghrib','Shom'],['Isha','Xufton']];
+ $('pray').innerHTML=m.map(([k,v])=>`<div class='row'><span>${v}</span><b>${d[k]}</b></div>`).join('');
+}catch(e){$('pray').textContent='—';}})();
+(async()=>{try{const r=await fetch('https://api.open-meteo.com/v1/forecast?latitude=41.31&longitude=69.24&current=temperature_2m');const c=(await r.json()).current;
+ $('wx').innerHTML=`<div class='row'><span>Hozir</span><b>${Math.round(c.temperature_2m)}°C</b></div>`;
+}catch(e){$('wx').textContent='—';}})();
+</script></body></html>

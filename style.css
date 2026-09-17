@@ -85,8 +85,13 @@ footer a{color:#fff;font-weight:600}footer p{margin-bottom:6px;font-size:14px}.f
   .subbar{font-size:12px;padding:6px 16px}
 }
 @media(max-width:640px){.lead{grid-template-columns:1fr}.grid{grid-template-columns:1fr}.post h1{font-size:36px}.lead h2{font-size:30px}.side{flex-direction:column}}
-.themebtn{background:none;border:1px solid var(--line);color:var(--ink);width:40px;height:34px;border-radius:8px;font-size:17px;cursor:pointer;line-height:1;padding:0}
-.themebtn:hover{border-color:var(--red)}
+.themebtn,.iconbtn{background:none;border:1px solid var(--line);color:var(--ink);min-width:40px;height:34px;border-radius:8px;font-size:16px;cursor:pointer;line-height:32px;padding:0;text-align:center;display:inline-block}
+.themebtn:hover,.iconbtn:hover{border-color:var(--red)}
+.searchpage{max-width:1180px;margin:0 auto;padding:30px 22px}
+.searchbox{width:100%;font-family:inherit;font-size:18px;font-weight:500;padding:14px 18px;border:2px solid var(--line);border-radius:12px;background:var(--card);color:var(--ink);margin-bottom:8px}
+.searchbox:focus{outline:none;border-color:var(--red)}
+.searchpage .empty{color:var(--mut);margin:14px 0 22px}
+.searchpage .grid{margin-top:6px}
 @media(prefers-color-scheme:dark){
   :root:not([data-theme="light"]){--bg:#141210;--ink:#f0ece3;--mut:#a49c8d;--line:#2c2822;--cream:#1c1915;--card:#1c1915}
   :root:not([data-theme="light"]) .chip{background:#2c2822;color:#a49c8d}
