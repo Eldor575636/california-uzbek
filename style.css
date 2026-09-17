@@ -16,7 +16,7 @@ header.site{border-bottom:3px solid var(--blk);background:var(--cream);padding:1
 .ticker .tk-k{color:#9a9384;font-weight:700}
 .ticker b{color:#fff;font-weight:800}
 .ticker .tk-fx b{color:var(--red)}
-.ticker .tk-date{color:#c9c2b4;text-transform:capitalize}
+.ticker .tk-date{color:#c9c2b4}
 .ticker .tk-wx{margin-left:auto}
 @media(max-width:640px){.ticker{font-size:11.5px;gap:11px;padding:5px 16px}.ticker .tk-date{display:none}}
 .subbar{background:var(--blk);color:#cfc9be;font-size:13px;font-weight:600;padding:6px 22px;text-align:center}
