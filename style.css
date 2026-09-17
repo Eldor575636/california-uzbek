@@ -79,6 +79,8 @@ header.site{border-bottom:3px solid var(--blk);background:var(--cream);padding:1
 .lu-t{color:var(--red);font-weight:800;font-size:14px;padding-top:3px}
 .lu-body p{font-size:18px;line-height:1.55;margin:0 0 8px}
 .lu-src{font-size:13px;color:var(--mut)}.lu-src a{color:var(--red);font-weight:600}
+.lupd.brk{background:color-mix(in srgb,var(--red) 7%,transparent);border-radius:10px;padding-left:14px;padding-right:14px}
+.lu-brk{display:inline-block;background:var(--red);color:#fff;font-weight:800;font-size:11px;letter-spacing:.06em;padding:3px 9px;border-radius:6px;margin-bottom:8px}
 .live-note{margin-top:20px;font-size:13px;color:var(--mut);font-style:italic}
 @media(max-width:640px){.lupd{grid-template-columns:1fr;gap:5px;padding:16px 0}}
 .ltabs{display:flex;gap:10px;margin:6px 0 4px}
