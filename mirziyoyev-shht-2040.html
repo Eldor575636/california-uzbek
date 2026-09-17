@@ -45,7 +45,7 @@
 
 <script>
 const $=(id)=>document.getElementById(id);
-try{if($('tkdate'))$('tkdate').textContent=new Date().toLocaleDateString('uz-UZ',{day:'numeric',month:'long',year:'numeric'});}catch(e){}
+try{var _t=new Date(),_MO=["", "yanvar", "fevral", "mart", "aprel", "may", "iyun", "iyul", "avgust", "sentabr", "oktabr", "noyabr", "dekabr"],dd=_t.getDate(),mm=_MO[_t.getMonth()+1],yy=_t.getFullYear();if($('tkdate'))$('tkdate').textContent=dd+'-'+mm+', '+yy;}catch(e){}
 (async()=>{try{const r=await fetch('https://open.er-api.com/v6/latest/USD');const d=await r.json();const u=d.rates.UZS;const f=(x)=>Math.round(x).toLocaleString('en-US');
  if($('tkfx'))$('tkfx').innerHTML=`<span class='tk-k'>USD</span> <b>${f(u)}</b> · <span class='tk-k'>EUR</span> <b>${f(u/d.rates.EUR)}</b> · <span class='tk-k'>RUB</span> <b>${(u/d.rates.RUB).toFixed(1)}</b>`;
 }catch(e){}})();
