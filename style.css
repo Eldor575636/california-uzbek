@@ -68,6 +68,26 @@ header.site{border-bottom:3px solid var(--blk);background:var(--cream);padding:1
 .mostread li:last-child{border-bottom:none}
 .mostread li::before{content:counter(mr);font-family:'Anton',sans-serif;color:var(--red);font-size:22px;line-height:1;min-width:20px}
 .mostread li a{font-weight:600;font-size:14.5px;line-height:1.3}.mostread li a:hover{color:var(--red)}
+.livelink{color:var(--red)!important;font-weight:800;display:inline-flex;align-items:center;gap:6px}
+.live-dot{width:9px;height:9px;border-radius:50%;background:var(--red);display:inline-block;animation:cupulse 1.6s infinite}
+@keyframes cupulse{0%{box-shadow:0 0 0 0 rgba(215,38,30,.55)}70%{box-shadow:0 0 0 8px rgba(215,38,30,0)}100%{box-shadow:0 0 0 0 rgba(215,38,30,0)}}
+.live-head{display:flex;align-items:center;gap:12px;margin-bottom:6px}.live-head h1{margin:0}
+.post.live .dek{margin-bottom:10px}
+.live-feed{margin-top:18px}
+.lupd{display:grid;grid-template-columns:150px 1fr;gap:18px;padding:20px 0;border-bottom:1px solid var(--line)}
+.lupd:first-child{border-top:3px solid var(--red)}
+.lu-t{color:var(--red);font-weight:800;font-size:14px;padding-top:3px}
+.lu-body p{font-size:18px;line-height:1.55;margin:0 0 8px}
+.lu-src{font-size:13px;color:var(--mut)}.lu-src a{color:var(--red);font-weight:600}
+.live-note{margin-top:20px;font-size:13px;color:var(--mut);font-style:italic}
+@media(max-width:640px){.lupd{grid-template-columns:1fr;gap:5px;padding:16px 0}}
+.ltabs{display:flex;gap:10px;margin:6px 0 4px}
+.ltab{font-weight:800;font-size:14px;padding:8px 16px;border-radius:999px;border:1.5px solid var(--line);color:var(--mut)}
+.ltab.on{background:var(--red);color:#fff;border-color:var(--red)}
+.ltab:hover{border-color:var(--red)}
+.tgbar{display:block;text-align:center;background:#229ED9;color:#fff;font-size:13px;font-weight:600;padding:6px 16px}
+.tgbar b{font-weight:800}.tgbar .tgic{opacity:.9}.tgbar .tgar{opacity:.85}
+.tgbar:hover{background:#1c8ec4}
 .reach{background:var(--ink);color:var(--bg);border:none}
 .reach-top{display:flex;align-items:center;gap:12px;margin-bottom:12px}
 .reach-big{font-family:'Anton',sans-serif;font-size:40px;line-height:.9;color:var(--red)}
